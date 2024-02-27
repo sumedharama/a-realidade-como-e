@@ -1,0 +1,102 @@
+\documentclass[
+  final,
+  babelLanguage=portuguese,
+  %desktopVersion,
+  %showtrims,
+  %overleaf,
+]{anecdote}
+
+\graphicspath{{./assets/photos/92dpi-ebook-sRGB/}}
+
+% Page size: 6x9 inch
+% Body text: 10.5 / 15 pt
+
+\usepackage{local}
+
+%% Details of the book
+%% ===================
+
+\title{A Realidade Como É}
+\subtitle{}
+\author{Ajahn Sumedho}
+\publisher{Publicações Sumedhārāma}
+\date{2024-02-25}
+\editionInfo{\textit{Primeira edição portuguesa}, 2024}
+\ISBN{000-000-0000-00-0}% TODO update ISBN
+
+% === Metadata ===
+
+\hypersetup{
+  pdftitle={\thetitle},
+  pdfauthor={\theauthor},
+  pdfcopyright={Copyright (C) 2017, \thePublisher},
+  pdfsubject={},% TODO subject
+  pdfkeywords={},% TODO keywords
+  pdflicenseurl={https://creativecommons.org/licenses/by-nc-nd/4.0/},
+  pdfcontacturl={},
+  pdflang={en},
+}
+
+% \pdfinfo{%
+%   /Title (\thetitle)%
+%   /Author (\theauthor)
+%   /Subject (subject)% TODO subject
+%   /Keywords (keywords)% TODO keywords
+%   /GTS_PDFXVersion (PDF/X-1:2001)%
+%   /GTS_PDFXConformance (PDF/X-1a:2001)%
+% }
+
+%% === Load further packages ===
+
+%% === Hyphenation exceptions and corrections ===
+
+\hyphenation{London}
+
+\begin{document}
+
+\frontmatter
+
+\ifdesktopversion
+\desktopCover{\includegraphics[height=\paperheight]{./desktop-cover.png}}
+\fi
+
+\input{./manuscript/tex/titlepage.tex}
+
+\input{./manuscript/tex/copyright.tex}
+
+\cleartorecto
+\tableofcontents*
+
+\input{./manuscript/tex/00-01-sobre-o-autor.tex}
+\input{./manuscript/tex/00-02-introducao.tex}
+
+% Page 1 is the first page of the first chapter.
+\mainmatter
+
+\input{./manuscript/tex/00-03-felicidade-para-sempre.tex}
+\input{./manuscript/tex/01-investigando-a-mente.tex}
+\input{./manuscript/tex/02-tudo-o-que-surge-acaba.tex}
+\input{./manuscript/tex/03-os-cinco-khandhas.tex}
+\input{./manuscript/tex/04-todo-o-tempo-no-mundo.tex}
+\input{./manuscript/tex/05-preceitos.tex}
+\input{./manuscript/tex/06-a-realidade-como-e.tex}
+\input{./manuscript/tex/07-a-jangada.tex}
+\input{./manuscript/tex/08-a-paciencia.tex}
+\input{./manuscript/tex/09-reflexoes-sobre-a-comida.tex}
+\input{./manuscript/tex/10-aceitando-as-coisas-como-sao.tex}
+\input{./manuscript/tex/11-consciencia-e-sensibilidade.tex}
+\input{./manuscript/tex/12-o-som-do-silencio.tex}
+\input{./manuscript/tex/13-so-uma-respiracao.tex}
+\input{./manuscript/tex/14-quietude-e-resposta.tex}
+\input{./manuscript/tex/15-virando-em-direccao-ao-vazio.tex}
+\input{./manuscript/tex/16-para-alem-da-crenca.tex}
+
+\backmatter
+
+% \input{./manuscript/tex/glossary.tex}
+
+\input{./manuscript/tex/copyright-details.tex}
+
+\emptyUntilEven
+
+\end{document}
