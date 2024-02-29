@@ -666,7 +666,9 @@ philo-sophical munindo amaravati thai-land}
 
 #2
 
-\textls*{\scshape #3}
+\vspace*{2pt}
+
+\textls*{\fontsize{11}{12}\scshape\selectfont \MakeLowercase{#3}}
 \end{minipage}
 
 \par}
