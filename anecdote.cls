@@ -262,8 +262,8 @@
 
 % === hyperref ===
 
-\RequirePackage{hyperxmp}
 \RequirePackage{hyperref}
+\RequirePackage{hyperxmp}
 
 % https://tex.stackexchange.com/questions/32076/incorrect-toc-index-cross-references-when-resetting-memoir-class-counters
 % hypertexnames=true
