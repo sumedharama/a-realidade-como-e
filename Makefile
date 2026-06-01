@@ -1,9 +1,12 @@
 FILE=main
 
-LATEX=lualatex
-BIBTEX=bibtex
+LATEX=latexmk
+LATEX_OPTS=-g -interaction=nonstopmode -halt-on-error -synctex=1 -xelatex
 
-LATEX_OPTS=-interaction=nonstopmode -halt-on-error
+# LATEX=lualatex
+# LATEX_OPTS=-interaction=nonstopmode -halt-on-error
+
+BIBTEX=bibtex
 
 all: document
 

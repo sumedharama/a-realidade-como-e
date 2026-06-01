@@ -30,6 +30,8 @@ tags
 *.lof
 *.fls
 *.fdb_latexmk
+*.xdv
+*.synctex.gz
 doc/_minted-prophecy/
 
 # General macOS
