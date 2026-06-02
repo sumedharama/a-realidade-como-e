@@ -9,5 +9,6 @@
         "%DOC_EXT%"
     ],
     "editor.lineNumbers": "off",
-    "ltex.language": "pt-PT"
+    "ltex.language": "pt-PT",
+    "workbench.colorTheme": "Dark Modern"
 }
