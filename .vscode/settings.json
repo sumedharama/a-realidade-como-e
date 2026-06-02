@@ -1,0 +1,13 @@
+{
+    "latex-workshop.latex.external.build.command": "latexmk",
+    "latex-workshop.latex.external.build.args": [
+        "-g",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "-synctex=1",
+        "-xelatex",
+        "%DOC_EXT%"
+    ],
+    "editor.lineNumbers": "off",
+    "ltex.language": "pt-PT"
+}
