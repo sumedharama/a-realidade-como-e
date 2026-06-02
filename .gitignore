@@ -23,6 +23,9 @@ TAGS
 *~
 tags
 
+.claude/
+.continue/
+
 # LaTeX temp files
 *.aux
 *.log
