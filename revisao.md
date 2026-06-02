@@ -18,8 +18,6 @@ para que uma próxima ronda de revisão possa retomar a partir daqui.
 > alteram o texto**. A correção propriamente dita fica para uma fase seguinte,
 > depois de decididas as convenções globais (ver secção 1).
 
----
-
 ## 1. Decisões editoriais globais a tomar (prioritárias)
 
 Estas questões são transversais ao livro e devem ser **decididas primeiro** e
@@ -94,8 +92,6 @@ Em português escrevem-se com **minúscula**. Surgem com maiúscula: `Laosiano`
 No cap. 14 o corpo usa `cerimónia` (PT-PT) e a nota de rodapé usa `cerimônia`
 (circunflexo, PT-BR). Verificar circunflexos brasileiros noutros pontos.
 
----
-
 ## 2. Padrões recorrentes de erro (a vigiar em qualquer ronda futura)
 
 1. **Vírgula entre sujeito e verbo** — ex.: «O nosso desejo (…) de deleite,
@@ -120,8 +116,6 @@ No cap. 14 o corpo usa `cerimónia` (PT-PT) e a nota de rodapé usa `cerimônia`
 9. **Interrogativas** — «Porque é que…?» (PT-PT) em vez de «Por que…?» (PT-BR).
 10. **Marcas de oralidade** (só no cap. 26, transcrição) — «uh», repetições
     («nós, nós pensamos»), frases corridas.
-
----
 
 ## 3. Estado por ficheiro (nº de notas + itens não-sistémicos relevantes)
 
@@ -220,8 +214,6 @@ No cap. 14 o corpo usa `cerimónia` (PT-PT) e a nota de rodapé usa `cerimônia`
   um» (truncado); `dhukka`/`annata`→`dukkha`/`anattā`; `Amravati`→`Amaravati`;
   `anata`→`anattā`; «Luang Po»→«Luang Por».
 
----
-
 ## 4. Observações sobre marcadores `% FIXME` pré-existentes
 
 O manuscrito já continha alguns comentários `% FIXME` do tradutor/editor que
@@ -231,8 +223,6 @@ O manuscrito já continha alguns comentários `% FIXME` do tradutor/editor que
 - `02-tudo-o-que-surge-acaba.tex`: `% FIXME ordenação => taking precepts`.
 - `21-genese-dependente-03.tex`: `% FIXME: Verse reference is not 860` (dúvida
   sobre a referência do verso do Sutta-Nipāta citado em nota de rodapé).
-
----
 
 ## 5. Itens fora de âmbito / não tratados
 
@@ -246,8 +236,6 @@ O manuscrito já continha alguns comentários `% FIXME` do tradutor/editor que
 - **Coerência das traduções da fórmula de `paṭiccasamuppāda`** entre a Introdução
   e os capítulos 19–23 (termos como *soka/parideva/dukkha/domanassa/upāyāsa*):
   merece uma verificação dedicada para garantir a mesma tradução em todo o lado.
-
----
 
 ## 6. Como retomar
 
@@ -267,3 +255,52 @@ Para localizar rapidamente todas as notas desta ronda:
 ```
 grep -rn "% REVISÃO" manuscript/tex/*.tex
 ```
+
+### 7.
+
+### 7.1. Itens novos por ficheiro
+
+- **00-01-sobre-o-autor.tex (+2):** «acabou permanecendo» (gerúndio do PT-BR →
+  «acabou por permanecer»); «vilarejo» (PT-BR → «aldeia»).
+- **00-02-introducao.tex (+4):** frase de difícil leitura no 2.º parágrafo
+  («Embora não seja possível traduzir… pode sugerir a atmosfera…», sem sujeito
+  explícito para «pode sugerir»); «egotista» → «egoísta» (coerência lexical);
+  **gralha em termo Pali** «passā» → «phassa» (contacto); possível erro de
+  tradução — «jarā-maraṇaṁ» traduzido por «a velhice, **a doença** e a morte»
+  nos dois quotes (jarā-maraṇa = só «velhice e morte»; «doença» é acrescento).
+- **01-investigando-a-mente.tex (+2):** falta de paralelismo na colocação
+  pronominal («de o rejeitarmos, reprimirmos ou ignorá-lo» → uniformizar
+  próclise/ênclise); «Ridículo?» com ponto de interrogação onde devia ser «!».
+- **03-os-cinco-khandhas.tex (+1):** «se sua personalidade» → «se a sua
+  personalidade» (falta de artigo, PT-PT).
+- **05-preceitos.tex (+1):** «nos fazem sermos apanhados» — com o causativo
+  «fazer» o infinitivo não flexiona («fazem-nos ser apanhados»).
+- **09-reflexoes-sobre-a-comida.tex (+1):** **possível erro de tradução** —
+  «Permitir-me-ei ter fome sem comer demasiado» inverte o sentido do original
+  («I will allay my hunger…» = aplacar/saciar a fome).
+- **14-quietude-e-resposta.tex (+1):** «concepções egotistas» — o livro alterna
+  «egotista»/«egoísta»/«egocêntrica» (esta última no mesmo capítulo); uniformizar.
+- **19-genese-dependente-01.tex (+1):** legenda de foto em inglês — «Foto **by**
+  Jeff Pick» → «Foto **por** Jeff Pick» (como nas restantes legendas).
+- **22-genese-dependente-04.tex (+2):** «tememos-a» → «tememo-la» (verbo em -s
+  leva «-la»); «atrairia-vos» → «atrair-vos-ia» (mesóclise no futuro do
+  pretérito).
+- **26-como-as-coisas-sao.tex (+1):** topónimo «Nongkai» (várias ocorrências) vs
+  «Nong Khai» (caps. 00-01 e 13); uniformizar para «Nong Khai».
+
+### 7.2. Novos padrões/observações transversais a vigiar
+
+1. **Pronome enclítico com verbos terminados em -s** (formas «-lo/-la»): além de
+   «desejas-o» (cap. 22, 1.ª ronda), surgem «tememos-a» (cap. 22) e o caso de
+   mesóclise «atrairia-vos» (cap. 22). Vale a pena uma verificação dedicada de
+   `grep -rEno "[a-z]s-[oa]s?\b"`.
+2. **«egoísta» vs «egotista» vs «egocêntrico»** — três variantes em uso (caps.
+   00-02, 14, e outros); escolher uma e uniformizar.
+3. **Legendas das fotos** — verificar o uniformizador «Foto por …» / «Foto de …»:
+   há «Foto por», «Foto de» e até «Foto **by**» (cap. 19). Uniformizar a fórmula.
+4. **Nomes próprios/topónimos tailandeses** — «Nong Khai»/«Nongkai»; conferir
+   também «Luang Por»/«Luang Po» (cap. 26) e «Luang Por»/«Luan Por» (cap. 17, já
+   na 1.ª ronda).
+5. **Possíveis erros de tradução (não só de língua)** — assinalados nesta ronda
+   em 09 (aplacar a fome) e 00-02 («doença» em jarā-maraṇa); merecem cotejo com
+   o original inglês antes de corrigir.
