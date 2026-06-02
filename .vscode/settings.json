@@ -10,5 +10,16 @@
     ],
     "editor.lineNumbers": "off",
     "ltex.language": "pt-PT",
-    "workbench.colorTheme": "Dark Modern"
+    "workbench.colorTheme": "Dark Modern",
+    "editor.minimap.enabled": false,
+    "better-todo-tree.general.tags": [
+        "BUG",
+        "HACK",
+        "FIXME",
+        "TODO",
+        "XXX",
+        "[ ]",
+        "[x]",
+        "REVISÃO"
+    ]
 }
