@@ -5,8 +5,8 @@
         "-interaction=nonstopmode",
         "-halt-on-error",
         "-synctex=1",
-        "-xelatex",
-        "%DOC_EXT%"
+        "-lualatex",
+        "C:\\Users\\vdham\\Documents\\a-realidade-como-e\\main.tex"
     ],
     "editor.lineNumbers": "off",
     "ltex.language": "pt-PT",
