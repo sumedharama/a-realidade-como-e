@@ -35,6 +35,7 @@ tags
 *.fdb_latexmk
 *.xdv
 *.synctex.gz
+*.synctex(busy)
 doc/_minted-prophecy/
 
 # General macOS
